@@ -115,7 +115,7 @@ Mitigation:
     State check (pool.state != 1) ensures valid state for deposit.
     SafeERC20's safeTransferFrom is used for secure token transfer.
 
-# finalize Function
+# finalize function
 
 ```solidity
 function finalize() external onlyOwner returns (bool) {
@@ -146,7 +146,7 @@ Mitigation:
     State check (pool.state != 2) and soft cap check ensure valid finalization.
     sendValue from Address library is used for secure ETH transfer.
 
-# cancel Function
+# cancel function
 
 ```
 
@@ -178,7 +178,7 @@ Mitigation:
     State check (pool.state > 3) ensures valid state for cancellation.
     SafeERC20's safeTransfer is used for secure token transfer.
 
-# claim Function
+# claim function
 
 ```
 
@@ -236,7 +236,7 @@ Mitigation:
     _tokensForPresale: Calculates tokens for presale.
     _weiForLiquidity: Calculates Wei for liquidity provisioning.
 
-Summary of Findings
+# Summary of Findings
 
     Reentrancy: The contract is protected against reentrancy attacks by using the checks-effects-interactions pattern and sendValue from Address library for ETH transfers.
     Access Control: Functions that should be restricted to the owner are properly protected with the onlyOwner modifier.
@@ -245,7 +245,7 @@ Summary of Findings
     Gas Considerations: Functions such as finalize and _liquify are potentially gas-intensive and should be monitored for gas usage.
     Event Emissions: All state-changing operations emit relevant events for transparency and traceability.
 
-Recommendations
+# Recommendations
 
     Additional Tests: Implement extensive unit and integration tests to cover various edge cases and ensure the contract behaves as expected.
     Audits: Regularly audit the contract and dependencies for security vulnerabilities, especially before deployment to mainnet.
