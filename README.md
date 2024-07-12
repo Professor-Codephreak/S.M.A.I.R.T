@@ -118,10 +118,4 @@ This contract comes as is, without any guarantees that it's free of bugs or vuln
 ### Liquidity Considerations
 The contract automatically adds liquidity to Uniswap after a presale, but be aware, this liquidity isn't locked. That means it can be withdrawn, potentially impacting the token's stability. If you need the liquidity locked, this setup might require some tweaks.
 
-## ✨ Conclusion
-
-Thank you for exploring the Presale Smart Contract! 
-
-The Presale Smart Contract is freely available under the MIT License. This means you are free to use, modify, and distribute the project as you see fit.
-
-Happy deploying! 🚀
+✨ Happy deploying! 🚀
