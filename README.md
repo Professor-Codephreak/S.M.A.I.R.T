@@ -1,4 +1,4 @@
-# 🚀  Smart Presale Contract  🚀
+# 🚀  S.M.A.I.R.T presale contract 🚀
 
 
 This contract is built to provide a comprehensive solution for managing token presales, ensuring transparency and security for both project owners and contributors.
