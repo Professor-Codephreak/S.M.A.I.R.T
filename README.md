@@ -1,4 +1,5 @@
-# 🚀  Presale Smart Contract
+# 🚀  Smart Presale Contract  🚀
+
 
 This contract is built to provide a comprehensive solution for managing token presales, ensuring transparency and security for both project owners and contributors.
 
@@ -12,7 +13,7 @@ The contract starts with the deployment phase where the token parameters, such a
 - **Refunds:** Offers a refund mechanism for participants if the presale does not reach its soft cap or is cancelled.
 - **Hard Cap and Soft Cap:** Define minimum and maximum funding goals to steer the presale's success criteria.
 - **Timed Rounds:** Presale starts and ends are strictly timed – no contributions outside this window.
-- **Automatic Liquidity Allocation:** A predefined portion of the funds raised is automatically converted into liquidity and added to UniswapV2.
+- **Automatic Liquidity Allocation:** A predefined portion of the funds raised is automatically converted into liquidity and added to UniswapV2  🚀
 
 ## ✔️ How to Deploy
 
