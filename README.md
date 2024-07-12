@@ -1,20 +1,54 @@
-# 🚀  S.M.A.I.R.T presale contract 🚀
+🚀 S.M.A.I.R.T Presale Contract 🚀
 
+The S.M.A.I.R.T presale contract is designed to offer a robust and secure solution for managing token presales. It ensures transparency and security for both project owners and contributors throughout the presale lifecycle.
+Overview
 
-This contract is built to provide a comprehensive solution for managing token presales, ensuring transparency and security for both project owners and contributors.
+The contract begins with the deployment phase, where essential token parameters are defined, including:
 
-The contract starts with the deployment phase where the token parameters, such as hard cap, soft cap, minimum and maximum contributions, and liquidity allocation, are defined. Once deployed and tokens are deposited by the owner, the presale phase begins, allowing participants to contribute within the defined timeframe. At the end of the presale, if the soft cap is met, the contract transitions into the finalization phase, automatically allocating a portion of the funds to liquidity on UniswapV2 and enabling token claims for contributors. Should the presale not meet its minimum goals or be cancelled, it supports a refund mechanism, ensuring that participants can retrieve their contributions under these conditions.
+    Hard Cap: The maximum amount of funds to be raised.
+    Soft Cap: The minimum amount of funds required for the presale to be considered successful.
+    Minimum and Maximum Contributions: Limits on how much each participant can contribute.
+    Liquidity Allocation: The portion of funds to be allocated to liquidity.
 
-## 👉 Features
+Phases
 
-- **Token Management:** Handle deposits, and manage tokens throughout the presale lifecycle.
-- **Token Claim:** Participants can claim their tokens after the presale concludes successfully.
-- **Cancel:** Allows the owner to cancel the presale, enabling refunds under certain conditions.
-- **Refunds:** Offers a refund mechanism for participants if the presale does not reach its soft cap or is cancelled.
-- **Hard Cap and Soft Cap:** Define minimum and maximum funding goals to steer the presale's success criteria.
-- **Timed Rounds:** Presale starts and ends are strictly timed – no contributions outside this window.
-- **Automatic Liquidity Allocation:** A predefined portion of the funds raised is automatically converted into liquidity and added to UniswapV2  🚀
+    Deployment Phase:
+        Token parameters are set.
+        The owner deposits tokens into the contract.
 
+    Presale Phase:
+        Participants can contribute within the defined timeframe.
+        Contributions are accepted until the hard cap is reached or the presale period ends.
+
+    Finalization Phase:
+        If the soft cap is met, the contract transitions to this phase.
+        A portion of the funds is allocated to liquidity on UniswapV2.
+        Contributors can claim their tokens.
+
+    Refund Phase:
+        If the soft cap is not met or the presale is cancelled, a refund mechanism is activated.
+        Participants can retrieve their contributions.
+
+Features
+
+    Token Management: Efficiently handles token deposits and manages tokens throughout the presale lifecycle.
+    Token Claim: Allows participants to claim their tokens after a successful presale conclusion.
+    Cancel Functionality: Enables the owner to cancel the presale, triggering the refund mechanism under certain conditions.
+    Refund Mechanism: Provides a secure way for participants to retrieve their contributions if the presale does not meet its soft cap or is cancelled.
+    Hard Cap and Soft Cap: Clearly defined minimum and maximum funding goals to ensure the presale's success criteria.
+    Timed Rounds: The presale has strict start and end times, preventing contributions outside the designated window.
+    Automatic Liquidity Allocation: A predefined portion of the raised funds is converted into liquidity and added to UniswapV2, ensuring immediate market support for the token.
+
+Security and Transparency
+
+The contract ensures a secure and transparent presale process by:
+
+    Validating State Transitions: Ensuring that functions are called only in the appropriate contract state.
+    Access Control: Restricting critical functions to the contract owner.
+    Using SafeERC20: Employing secure token transfer methods from the OpenZeppelin library.
+    Event Emissions: Emitting events for key actions (e.g., deposits, purchases, finalizations, cancellations, refunds) to provide a transparent log of activities.
+
+By implementing these features and security measures, the S.M.A.I.R.T presale contract provides a reliable and efficient platform for managing token presales, benefiting both project owners and participants. This project was made possible by
 ## ✔️ How to Deploy
 
 To get this contract up and running, you’ll need [Node.js](https://nodejs.org/) installed on your machine, along with [Hardhat](https://hardhat.org/getting-started/) set up in a TypeScript environment. Here’s how you can deploy it step by step:
