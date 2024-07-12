@@ -1,0 +1,48 @@
+import { HardhatUserConfig } from "hardhat/config";
+import "@nomicfoundation/hardhat-toolbox";
+import * as dotenv from 'dotenv';
+
+dotenv.config();
+
+const Accounts = [
+  process.env.PK_ACCOUNT1,
+  // Add more private keys here if needed
+].filter(account => account !== undefined) as string[];
+
+const config: HardhatUserConfig = {
+  solidity: {
+    compilers: [
+      {
+        version: "0.8.24",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 1_000_000,
+          },
+          viaIR: true,
+        },
+      },
+    ],
+  },
+  networks: {
+    hardhat: {
+      gas: "auto",       // Automatically estimate the gas
+      blockGasLimit: 0x1fffffffffffff, // Set a very high block gas limit
+      allowUnlimitedContractSize: true,
+      accounts: {
+        count: 400 // Set the number of accounts available in the local Hardhat network
+      }
+    },
+    sepolia: {
+      url: process.env.ETH_SEPOLIA_HTTPS as string,
+      accounts: Accounts,
+      timeout: 150_000 // Set timeout to 150 seconds
+    },
+    anvil: {
+      url: "http://127.0.0.1:8545",
+      accounts: Accounts,
+    }
+  },
+};
+
+export default config;
