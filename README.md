@@ -48,7 +48,7 @@ The contract ensures a secure and transparent presale process by:
     Using SafeERC20: Employing secure token transfer methods from the OpenZeppelin library.
     Event Emissions: Emitting events for key actions (e.g., deposits, purchases, finalizations, cancellations, refunds) to provide a transparent log of activities.
 
-By implementing these features and security measures, the S.M.A.I.R.T presale contract provides a reliable and efficient platform for managing token presales, benefiting both project owners and participants. This project was made possible by <a href="https://github.com/kirilradkov14/presale-contract">kirilradkov14</a> MIT license so all can benifit. Use at own risk.
+By implementing these features and security measures, the S.M.A.I.R.T presale contract provides a reliable and efficient platform for managing token presales, benefiting both project owners and participants. This project was made possible by <a href="https://github.com/kirilradkov14/presale-contract">kirilradkov14</a> MIT license so all can benifit. Audited by S.M.A.I.R.T use at own risk.
 ## ✔️ How to Deploy
 
 To get this contract up and running, you’ll need [Node.js](https://nodejs.org/) installed on your machine, along with [Hardhat](https://hardhat.org/getting-started/) set up in a TypeScript environment. Here’s how you can deploy it step by step:
