@@ -1,4 +1,5 @@
-🚀 S.M.A.I.R.T Presale Contract 🚀
+Solidity Machine Augmented Intelligent Responsive Toolkit
+# 🚀 S.M.A.I.R.T Presale Contract 🚀
 
 The S.M.A.I.R.T presale contract is designed to offer a robust and secure solution for managing token presales. It ensures transparency and security for both project owners and contributors throughout the presale lifecycle.
 Overview
