@@ -55,8 +55,8 @@ To get this contract up and running, you’ll need [Node.js](https://nodejs.org/
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/kirilradkov14/presale-contract.git
-   cd <your-project-folder>
+   git clone [https://github.com/kirilradkov14/presale-contract.git](https://github.com/Professor-Codephreak/S.M.A.I.R.T-presale)
+   cd S.M.A.I.R.T-presale
    ```
 
 2. **Install dependencies:**
@@ -110,12 +110,11 @@ To get this contract up and running, you’ll need [Node.js](https://nodejs.org/
 ## ❗Important consideration
 
 ### Testing and Audits
-It's essential to thoroughly test this contract on testnets before even thinking about hitting production. It hasn't been audited by external parties. So, if you're planning to use this for serious stuff, consider getting a professional audit to check everything’s in order.
-
+It's essential to thoroughly test this contract on your testnets before production
 ### Use at Your Own Risk
 This contract comes as is, without any guarantees that it's free of bugs or vulnerabilities. If you decide to use it, you're doing so at your own risk. Make sure you fully understand what the contract does before deploying it.
 
 ### Liquidity Considerations
 The contract automatically adds liquidity to Uniswap after a presale, but be aware, this liquidity isn't locked. That means it can be withdrawn, potentially impacting the token's stability. If you need the liquidity locked, this setup might require some tweaks.
 
-✨ Happy deploying! 🚀
+✨ auditing provided by S.M.A.I.R.T  🚀
