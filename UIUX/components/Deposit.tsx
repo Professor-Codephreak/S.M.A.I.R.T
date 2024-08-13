@@ -1,36 +1,36 @@
-// components/Cancel.tsx
+// components/Deposit.tsx
 import { Button, Text, Stack, useToast } from "@chakra-ui/react";
 import { useContractWrite, usePrepareContractWrite } from 'wagmi';
 import { useState } from "react";
 import IPresaleABI from '../abi/IPresale.json';
 import { PRESALE_CONTRACT_ADDRESS } from '../utils/config';
 
-const Cancel = () => {
-  const [isCanceling, setIsCanceling] = useState(false);
+const Deposit = () => {
+  const [isDepositing, setIsDepositing] = useState(false);
   const toast = useToast();
   const { config } = usePrepareContractWrite({
     addressOrName: PRESALE_CONTRACT_ADDRESS,
     contractInterface: IPresaleABI,
-    functionName: 'cancel',
+    functionName: 'deposit',
   });
 
   const { write, isLoading, error } = useContractWrite({
     ...config,
     onSuccess: () => {
-      setIsCanceling(false);
+      setIsDepositing(false);
       toast({
         title: "Success",
-        description: "Presale canceled successfully.",
+        description: "Tokens deposited successfully.",
         status: "success",
         duration: 5000,
         isClosable: true,
       });
     },
     onError: (err) => {
-      setIsCanceling(false);
+      setIsDepositing(false);
       toast({
         title: "Error",
-        description: `Failed to cancel presale: ${err.message}`,
+        description: `Failed to deposit tokens: ${err.message}`,
         status: "error",
         duration: 5000,
         isClosable: true,
@@ -40,18 +40,18 @@ const Cancel = () => {
 
   return (
     <Stack spacing={3}>
-      <Text>Cancel Presale</Text>
+      <Text>Deposit Tokens for Presale</Text>
       <Button
-        onClick={() => { setIsCanceling(true); write?.(); }}
-        isLoading={isLoading || isCanceling}
-        isDisabled={!write || isCanceling}
+        onClick={() => { setIsDepositing(true); write?.(); }}
+        isLoading={isLoading || isDepositing}
+        isDisabled={!write || isDepositing}
       >
-        Cancel Presale
+        Deposit Tokens
       </Button>
       {error && <Text color="red.500">Error: {error.message}</Text>}
     </Stack>
   );
 };
 
-export default Cancel;
+export default Deposit;
 

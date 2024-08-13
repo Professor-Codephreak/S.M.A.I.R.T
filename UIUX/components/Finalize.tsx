@@ -1,36 +1,36 @@
-// components/Cancel.tsx
+// components/Finalize.tsx
 import { Button, Text, Stack, useToast } from "@chakra-ui/react";
 import { useContractWrite, usePrepareContractWrite } from 'wagmi';
 import { useState } from "react";
 import IPresaleABI from '../abi/IPresale.json';
 import { PRESALE_CONTRACT_ADDRESS } from '../utils/config';
 
-const Cancel = () => {
-  const [isCanceling, setIsCanceling] = useState(false);
+const Finalize = () => {
+  const [isFinalizing, setIsFinalizing] = useState(false);
   const toast = useToast();
   const { config } = usePrepareContractWrite({
     addressOrName: PRESALE_CONTRACT_ADDRESS,
     contractInterface: IPresaleABI,
-    functionName: 'cancel',
+    functionName: 'finalize',
   });
 
   const { write, isLoading, error } = useContractWrite({
     ...config,
     onSuccess: () => {
-      setIsCanceling(false);
+      setIsFinalizing(false);
       toast({
         title: "Success",
-        description: "Presale canceled successfully.",
+        description: "Presale finalized successfully.",
         status: "success",
         duration: 5000,
         isClosable: true,
       });
     },
     onError: (err) => {
-      setIsCanceling(false);
+      setIsFinalizing(false);
       toast({
         title: "Error",
-        description: `Failed to cancel presale: ${err.message}`,
+        description: `Failed to finalize presale: ${err.message}`,
         status: "error",
         duration: 5000,
         isClosable: true,
@@ -40,18 +40,18 @@ const Cancel = () => {
 
   return (
     <Stack spacing={3}>
-      <Text>Cancel Presale</Text>
+      <Text>Finalize Presale</Text>
       <Button
-        onClick={() => { setIsCanceling(true); write?.(); }}
-        isLoading={isLoading || isCanceling}
-        isDisabled={!write || isCanceling}
+        onClick={() => { setIsFinalizing(true); write?.(); }}
+        isLoading={isLoading || isFinalizing}
+        isDisabled={!write || isFinalizing}
       >
-        Cancel Presale
+        Finalize Presale
       </Button>
       {error && <Text color="red.500">Error: {error.message}</Text>}
     </Stack>
   );
 };
 
-export default Cancel;
+export default Finalize;
 

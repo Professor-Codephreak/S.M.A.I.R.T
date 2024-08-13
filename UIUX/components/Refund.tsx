@@ -1,36 +1,36 @@
-// components/Cancel.tsx
+// components/Refund.tsx
 import { Button, Text, Stack, useToast } from "@chakra-ui/react";
 import { useContractWrite, usePrepareContractWrite } from 'wagmi';
 import { useState } from "react";
 import IPresaleABI from '../abi/IPresale.json';
 import { PRESALE_CONTRACT_ADDRESS } from '../utils/config';
 
-const Cancel = () => {
-  const [isCanceling, setIsCanceling] = useState(false);
+const Refund = () => {
+  const [isRefunding, setIsRefunding] = useState(false);
   const toast = useToast();
   const { config } = usePrepareContractWrite({
     addressOrName: PRESALE_CONTRACT_ADDRESS,
     contractInterface: IPresaleABI,
-    functionName: 'cancel',
+    functionName: 'refund',
   });
 
   const { write, isLoading, error } = useContractWrite({
     ...config,
     onSuccess: () => {
-      setIsCanceling(false);
+      setIsRefunding(false);
       toast({
         title: "Success",
-        description: "Presale canceled successfully.",
+        description: "Refund processed successfully.",
         status: "success",
         duration: 5000,
         isClosable: true,
       });
     },
     onError: (err) => {
-      setIsCanceling(false);
+      setIsRefunding(false);
       toast({
         title: "Error",
-        description: `Failed to cancel presale: ${err.message}`,
+        description: `Failed to process refund: ${err.message}`,
         status: "error",
         duration: 5000,
         isClosable: true,
@@ -40,18 +40,18 @@ const Cancel = () => {
 
   return (
     <Stack spacing={3}>
-      <Text>Cancel Presale</Text>
+      <Text>Request Refund</Text>
       <Button
-        onClick={() => { setIsCanceling(true); write?.(); }}
-        isLoading={isLoading || isCanceling}
-        isDisabled={!write || isCanceling}
+        onClick={() => { setIsRefunding(true); write?.(); }}
+        isLoading={isLoading || isRefunding}
+        isDisabled={!write || isRefunding}
       >
-        Cancel Presale
+        Request Refund
       </Button>
       {error && <Text color="red.500">Error: {error.message}</Text>}
     </Stack>
   );
 };
 
-export default Cancel;
+export default Refund;
 
