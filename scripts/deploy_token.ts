@@ -1,3 +1,4 @@
+// deploy_token.ts
 import { ethers, run } from "hardhat";
 
 function sleep(ms: number): Promise<void> {
