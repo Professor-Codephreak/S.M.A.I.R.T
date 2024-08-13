@@ -40,14 +40,14 @@ Features
 
 Security and Transparency
 
-The contract ensures a secure and transparent presale process by:
+The contract ensures a transparent presale process by:
 
     Validating State Transitions: Ensuring that functions are called only in the appropriate contract state.
     Access Control: Restricting critical functions to the contract owner.
     Using SafeERC20: Employing secure token transfer methods from the OpenZeppelin library.
     Event Emissions: Emitting events for key actions (e.g., deposits, purchases, finalizations, cancellations, refunds) to provide a transparent log of activities.
 
-By implementing these features and security measures, the S.M.A.I.R.T presale contract provides a reliable and efficient platform for managing token presales, benefiting both project owners and participants. This project was made possible by <a href="https://github.com/kirilradkov14/presale-contract">kirilradkov14</a> MIT license so all can benifit. Audited by S.M.A.I.R.T use at own risk.
+By implementing these features and security measures, the S.M.A.I.R.T presale contract provides a reliable and efficient platform for managing token presales, benefiting both project owners and participants. This project was made possible by <a href="https://github.com/kirilradkov14/presale-contract">kirilradkov14</a> MIT license so all can benifit. This contract has been further audited and tested using S.M.A.I.R.T use of this source code is entirely your own risk.
 ## ✔️ How to Deploy
 
 To get this contract up and running, you’ll need [Node.js](https://nodejs.org/) installed on your machine, along with [Hardhat](https://hardhat.org/getting-started/) set up in a TypeScript environment. Here’s how you can deploy it step by step:
@@ -114,6 +114,5 @@ It's essential to thoroughly test this contract on your testnets before producti
 This contract comes as is, without any guarantees that it's free of bugs or vulnerabilities. If you decide to use it, you're doing so at your own risk. Make sure you fully understand what the contract does before deploying it.
 
 ### Liquidity Considerations
-The contract automatically adds liquidity to Uniswap after a presale, but be aware, this liquidity isn't locked. That means it can be withdrawn, potentially impacting the token's stability. If you need the liquidity locked, this setup might require some tweaks.
-
+The contract automatically adds unlocked liquidity to Uniswap after a presale. next step. auto timelock.
 ✨ audited by S.M.A.I.R.T  🚀
