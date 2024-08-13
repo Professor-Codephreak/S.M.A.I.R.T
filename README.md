@@ -104,7 +104,9 @@ To get this contract up and running, you’ll need [Node.js](https://nodejs.org/
     npx hardhat run scripts/deploy_presale.ts --network sepolia
     ```
 
-6. **Verify and interact with your contract on Etherscan**
+Alernatively, use <a href="https://github.com/Professor-Codephreak/S.M.A.I.R.T-presale/blob/main/UIUX/FOUNDRY.md">foundry</a><br  />
+
+**Verify and interact with your contract on Etherscan**
 
 ## ❗Important consideration
 
