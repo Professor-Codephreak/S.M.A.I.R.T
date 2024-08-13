@@ -122,4 +122,4 @@ integrage with multpile EVM<br />
 auto timelock<br />
 integrate with foundry<br />
 UI<br />
-✨ audited using S.M.A.I.R.T  🚀
+✨ created using S.M.A.I.R.T  🚀
