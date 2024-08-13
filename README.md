@@ -52,19 +52,19 @@ By implementing these features and security measures, the S.M.A.I.R.T presale co
 
 To get this contract up and running, you’ll need [Node.js](https://nodejs.org/) installed on your machine, along with [Hardhat](https://hardhat.org/getting-started/) set up in a TypeScript environment. Here’s how you can deploy it step by step:
 
-1. **Clone the repo:**
+**Clone the repo:**
    ```bash
    git clone [https://github.com/kirilradkov14/presale-contract.git](https://github.com/Professor-Codephreak/S.M.A.I.R.T-presale)
    cd S.M.A.I.R.T-presale
    ```
 
-2. **Install dependencies:**
+**Install dependencies:**
     ```bash
     npm install
     ```
 
-3. **Set up your environment variables:**
-    Create a `.env` file in the root of your project and populate it with necessary configurations like wallet private keys and Provider API keys as seen on example below:
+**Set up your environment variables:**
+    copy the .env.local template to .env or setup a `.env` file in the root of your project and populate it with necessary configurations like wallet private keys and Provider API keys similar to the follow substitute for your chain of preference. Use alchemy or equivalent provider.
     ```plaintext
     ETH_SEPOLIA_HTTPS =your-sepolia-https-rpc-here
 
@@ -76,7 +76,7 @@ To get this contract up and running, you’ll need [Node.js](https://nodejs.org/
     PK_ACCOUNT6 =your-wallet-private-key-here
     ```
 
-4.  **Compile the contracts:**
+   **Compile the contracts:**
     ```bash
     npx hardhat compile
     ```
