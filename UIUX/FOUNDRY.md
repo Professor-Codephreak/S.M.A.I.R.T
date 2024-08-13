@@ -1,3 +1,13 @@
+# install foundry
+```bash
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+```
+
+```bash
+cd S.M.A.I.R.T-presale
+forge init
+
 Start Anvil with Alchemy as the Forking Provider
 You can start Anvil by forking the Sepolia testnet using Alchemy’s endpoint:
 
