@@ -114,5 +114,10 @@ It's essential to thoroughly test this contract on your testnets before producti
 This contract comes as is, without any guarantees that it's free of bugs or vulnerabilities. If you decide to use it, you're doing so at your own risk. Make sure you fully understand what the contract does before deploying it.
 
 ### Liquidity Considerations
-The contract automatically adds unlocked liquidity to Uniswap after a presale. next step. auto timelock.
-✨ audited by S.M.A.I.R.T  🚀
+The contract automatically adds unlocked liquidity to Uniswap after a presale.<br />
+ROADMAP<br />
+integrage with multpile EVM<br />
+auto timelock<br />
+integrate with foundry<br />
+UI<br />
+✨ audited using S.M.A.I.R.T  🚀
