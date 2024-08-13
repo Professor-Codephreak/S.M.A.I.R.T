@@ -1,3 +1,4 @@
+```bash
 S.M.A.I.R.T-presale/
 ├── UIUX/
 │   ├── components/
@@ -19,7 +20,7 @@ S.M.A.I.R.T-presale/
 │   ├── .env.local
 │   ├── next.config.js
 │   ├── tsconfig.json
-
+```
 
 ```bash
 git clone https://github.com/Professor-Codephreak/S.M.A.I.R.T-presale.git
