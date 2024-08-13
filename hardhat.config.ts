@@ -1,4 +1,4 @@
-// Import the Hardhat configuration type
+// import Hardhat configuration type
 import { HardhatUserConfig } from "hardhat/config";
 // Import the Hardhat toolbox for additional plugins and utilities
 import "@nomicfoundation/hardhat-toolbox";
