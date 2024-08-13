@@ -120,6 +120,7 @@ The contract automatically adds unlocked liquidity to Uniswap after a presale.<b
 ROADMAP<br />
 integrage with multpile EVM<br />
 auto timelock<br />
+marketing allocation<br />
 integrate with foundry<br />
 UI<br />
 ✨ created using S.M.A.I.R.T  🚀
