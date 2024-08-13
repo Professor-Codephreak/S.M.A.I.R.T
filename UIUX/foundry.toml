@@ -1,0 +1,4 @@
+[profile.default]
+rpc_url = "https://eth-sepolia.g.alchemy.com/v2/YOUR_ALCHEMY_API_KEY"
+mnemonic = "test test test test test test test test test test test junk"  # replace with your mnemonic if needed
+block_base_fee_per_gas = 0
