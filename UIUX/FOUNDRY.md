@@ -18,7 +18,7 @@ anvil --chain-id 666666
 Adding Custom Network to MetaMask
 Open MetaMask and go to Settings > Networks > Add Network.
 Fill in the details:
-Network Name: Anvil (Custom)
+Network Name: ANVIL (Custom)
 RPC URL: http://127.0.0.1:8545
 Chain ID: 666666
 Currency Symbol: ETHVIL
