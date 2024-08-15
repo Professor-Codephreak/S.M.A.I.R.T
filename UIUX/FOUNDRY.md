@@ -22,7 +22,7 @@ Network Name: ANVIL (Custom)
 RPC URL: http://127.0.0.1:8545
 Chain ID: 11155111
 Currency Symbol: ETHVIL
-Click Save
+click Save
 ```
 
 # ANVIL creates 10 developer wallets
