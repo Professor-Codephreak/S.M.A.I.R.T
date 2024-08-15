@@ -7,7 +7,7 @@ foundryup
 ```bash
 cd S.M.A.I.R.T-presale/UIUX
 forge init --force
-anvil --chain-id 666666
+anvil --chain-id 11155111
 
 
 ```
@@ -20,7 +20,7 @@ Open MetaMask and go to Settings > Networks > Add Network.
 Fill in the details:
 Network Name: ANVIL (Custom)
 RPC URL: http://127.0.0.1:8545
-Chain ID: 666666
+Chain ID: 11155111
 Currency Symbol: ETHVIL
 Click Save
 ```
