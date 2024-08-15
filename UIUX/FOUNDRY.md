@@ -5,7 +5,7 @@ foundryup
 ```
 
 ```bash
-cd S.M.A.I.R.T-presale
+cd S.M.A.I.R.T-presale/UIUX
 forge init
 
 Start Anvil with Alchemy as the Forking Provider
