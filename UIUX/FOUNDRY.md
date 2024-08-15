@@ -57,7 +57,7 @@ Private Keys
 (8) 0xdbda1821b80551c9d65939329250298aa3472ba22feea921c0cf5d620ea67b97
 (9) 0x2a871d0798f97d79848a013d4936a73bf4cc922c825d33c1cf7073dff6d409c6
 ```
-# import private key 0 into metamask
+# import private key 0 into metamask<br />
 
 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80<br />
 metamask account1 tab --> Add account or hardware wallet --> Import Account --> Enter your private key string here:<br />
