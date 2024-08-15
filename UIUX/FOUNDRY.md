@@ -7,9 +7,10 @@ foundryup
 ```bash
 cd S.M.A.I.R.T-presale/UIUX
 forge init --force
+anvil --chain-id 11155111
+```
 
-Start Anvil with Alchemy as the Forking Provider
-You can start Anvil by forking the Sepolia testnet using Alchemy’s endpoint:
+alternatively you can start Anvil by forking the Sepolia testnet using Alchemy’s endpoint:
 
 ```bash
 anvil --fork-url https://eth-sepolia.g.alchemy.com/v2/YOUR_ALCHEMY_API_KEY --chain-id 11155111
