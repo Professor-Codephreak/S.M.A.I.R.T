@@ -54,7 +54,7 @@ To get this contract up and running, you’ll need [Node.js](https://nodejs.org/
 
 **Clone the repo:**
    ```bash
-   git clone [https://github.com/kirilradkov14/presale-contract.git](https://github.com/Professor-Codephreak/S.M.A.I.R.T-presale)
+   git clone https://github.com/Professor-Codephreak/S.M.A.I.R.T-presale
    cd S.M.A.I.R.T-presale
    ```
 
