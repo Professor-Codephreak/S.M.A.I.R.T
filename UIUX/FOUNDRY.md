@@ -7,13 +7,22 @@ foundryup
 ```bash
 cd S.M.A.I.R.T-presale/UIUX
 forge init --force
-anvil --chain-id 11155111
+anvil --chain-id 666666
+
+
 ```
-
-alternatively you can start Anvil by forking the Sepolia testnet using Alchemy’s endpoint:
-
+# install metamask
+<a href="https://metamask.io/download/">https://metamask.io/download/</a><br />
+# add ANVIL to metamask
 ```bash
-anvil --fork-url https://eth-sepolia.g.alchemy.com/v2/YOUR_ALCHEMY_API_KEY --chain-id 11155111
+Adding Custom Network to MetaMask
+Open MetaMask and go to Settings > Networks > Add Network.
+Fill in the details:
+Network Name: Anvil (Custom)
+RPC URL: http://127.0.0.1:8545
+Chain ID: 666666
+Currency Symbol: ETHVIL
+Click Save
 ```
 # Run Tests Using Foundry
 Once Anvil is running with the Sepolia fork provided by Alchemy, you can proceed to run your tests as usual:
