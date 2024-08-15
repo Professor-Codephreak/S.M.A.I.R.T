@@ -6,7 +6,7 @@ foundryup
 
 ```bash
 cd S.M.A.I.R.T-presale/UIUX
-forge init
+forge init --force
 
 Start Anvil with Alchemy as the Forking Provider
 You can start Anvil by forking the Sepolia testnet using Alchemy’s endpoint:
